@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 660px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.left, .center, .right {
+    width: 200px;
+    height: auto;
+}
+
+.img img {
+    max-width: 100%;
+	height: auto;
+}
+
+.center, .right {
+    align-self: flex-end;
+}
+
+.l:hover {
+    transform: rotate(140deg) translate(100px, 50px);
+}
+
+.c:hover {
+    transform: rotate(110deg) translate(50%, 50%);
+}
+
+.r:hover {
+    transform: rotate(120deg) translate(-90px,-240px);
+}
