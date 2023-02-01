@@ -6,7 +6,6 @@
 .container {
     width: 800px;
     height: auto;
-    border: 1px solid;
 }
 
 .main-menu {
@@ -20,14 +19,40 @@
     background-color: rgb(235, 54, 211);
     border-radius: 20px;
     transform: rotate(45deg);
+    z-index: 1;
+    position: relative;
 }
 
-.menu-item a {
+ .link {
     color: white;
     font-weight: bold;
     font-size: 12px;
+    font-style: arial;
+    transform: translate(25px, 25px);
+    z-index: 2;
+    position: absolute;
 }
 
-.link {
-    transform: rotate(315deg);
+.trans-d {
+    border-radius: 20px;
+    transform: rotate(45deg);
+    transition: border-radius rotate 2s;
+}
+
+.trans-d:hover {
+    border-radius: 0;
+}
+
+.trans-d:active {
+    border-radius: 20px;
+    transform: rotate(90deg);
+}
+
+.trans-l {
+    transform: rotate(0deg) translate(25px, 25px);
+    transition: rotate translate 2s;
+}
+
+.trans-l:active {
+    transform: rotate(320deg) translate(0px, 0px);
 }

@@ -1,0 +1,103 @@
+* {
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    width: 800px;
+    height: auto;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu-item {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(235, 54, 211);
+    border-radius: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+ .link {
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    font-style: arial;
+    transform: translate(25px, 25px);
+    z-index: 2;
+    position: absolute;
+}
+
+@keyframes myfirst{
+
+    0% {
+        background-color: rgb(235, 54, 211);
+        transform: rotate(0deg) scale(0);
+    }
+
+    25% {
+        background-color: green;
+        transform: rotate(180deg);
+    }
+
+    40% {
+        background-color: red;
+        transform: scale(3);
+    }
+
+    60% {
+        background-color: blue;
+        transform: scale(0);
+    }
+
+    100% {
+        background-color: #cc22aa;
+        transform: rotate(-180deg);
+    }
+}
+
+@keyframes mysecond{
+
+    0% {
+        background-color: rgb(235, 54, 211);
+        transform: rotate(0deg) scale(0);
+    }
+
+    20% {
+        transform: scale(2);
+        opacity: 0.2;
+        border-radius: 0;
+    } 
+    
+    40% {
+        width: 350px;
+        background-color:#f00;
+        transform: scale(5);
+        border-radius: 50px;
+    }
+
+    60% {
+        width: 135px;
+        border-radius: 0;
+        transform: scale(2);
+    }
+
+    100% {
+        opacity: 1;
+        background-color: #cc22aa;
+        transform: scale(0);
+    }
+
+}
+
+.anim:hover {
+    animation: myfirst 5s;
+}
+
+.anim:active {
+    animation: mysecond 3s;
+}
