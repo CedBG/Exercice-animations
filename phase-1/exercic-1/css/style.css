@@ -30,13 +30,13 @@ body {
 }
 
 .l:hover {
-    transform: scale(2,2) translate(20px, 60px);
+    transform: scale(1.75) translate(20px, 60px);
 }
 
 .c:hover {
-    transform: scale(2,2) translate(10px, 19px);
+    transform: scale(1.5) translate(-1px, -1px);
 }
 
 .r:hover {
-    transform: scale(2,2) translate(5px, 20px);
+    transform: scale(1.5) translate(-34px, -19px);
 }

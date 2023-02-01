@@ -30,13 +30,13 @@ body {
 }
 
 .l:hover {
-    transform: rotate(140deg) translate(100px, 50px);
+    transform: rotate(140deg) translate(120px, 280px);
 }
 
 .c:hover {
-    transform: rotate(110deg) translate(50%, 50%);
+    transform: rotate(110deg);
 }
 
 .r:hover {
-    transform: rotate(120deg) translate(-90px,-240px);
+    transform: rotate(120deg) translate(-75px,-225px);
 }

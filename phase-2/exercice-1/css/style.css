@@ -1,0 +1,33 @@
+* {
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    width: 800px;
+    height: auto;
+    border: 1px solid;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu-item {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(235, 54, 211);
+    border-radius: 20px;
+    transform: rotate(45deg);
+}
+
+.menu-item a {
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.link {
+    transform: rotate(315deg);
+}
